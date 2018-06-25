@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qunar.fresh2017.dao.ContentDao">
+
+    <sql id="all_fields">
+        title AS title,
+        number AS number,
+        ch_number AS chNumber,
+        en_number AS enNumber,
+        punc_number AS puncNumber
+    </sql>
+
+    <insert id="insert" parameterType="ContentModel">
+        INSERT
+        INTO
+        file_content
+        (
+        title,
+        number,
+        ch_number,
+        en_number,
+        punc_number
+        )
+        VALUES (
+        #{title},
+        #{number},
+        #{chNumber},
+        #{enNumber},
+        #{puncNumber}
+        )
+    </insert>
+
+    <select id="query" resultType="ContentModel">
+        SELECT
+        <include refid="all_fields"/>
+        FROM
+        file_content
+    </select>
+
+    <select id="queryByOffset" parameterType="Integer" resultType="ContentModel">
+        SELECT
+        <include refid="all_fields"/>
+        FROM
+        file_content
+        limit #{offset},8
+    </select>
+
+    <select id="queryCount" resultType="Integer">
+        SELECT
+        COUNT(title) AS c
+        FROM
+        file_content
+    </select>
+</mapper>

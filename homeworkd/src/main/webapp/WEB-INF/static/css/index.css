@@ -1,0 +1,116 @@
+.container{
+    text-align: center;
+    margin: 30px 150px;
+    width: 1000px;
+}
+.header{
+    margin-left: 30px;
+    margin-top: 70px;
+    text-align: left;
+    height: 50px;
+}
+#text{
+    border-radius: 6px;
+    text-align: left;
+    font-size: 14px;
+    width: 450px;
+    height: 28px;
+    padding: 4px;
+    color: #bac2c6;
+}
+#submit{
+    background-color: #3982ff;
+    color: #fff3ec;
+    border-radius: 6px;
+    border:2px  solid  #3982ff;
+    height: 28px;
+    width: 58px;
+    padding: 4px;
+    margin-left:50px;
+}
+.main{
+    margin-top: -28px;
+    text-align:center;
+    height: 410px;
+}
+#content{
+    margin: 30px;
+    width: 900px;
+}
+.content-title{
+    height: 42px;
+    width: 880px;
+    font-size: 14px;
+    font-family: 黑体;
+    background-color: #bac2c6;
+}
+.tableHead-title{
+    text-align: left;
+    width: 400px;
+    border-collapse:collapse;
+}
+.tableHead-number{
+    text-align: left;
+    width:125px;
+}
+.tableHead-cnNumber{
+    text-align: left;
+    width:125px;
+}
+.tableHead-enNumber{
+    text-align: left;
+    width:125px;
+}
+.tableHead-puncNumber{
+    text-align: left;
+    width:125px;
+}
+.content-result{
+    height: 42px;
+    width: 880px;
+    font-size: 12px;
+}
+.article-title{
+    color: #3982ff;
+    font-family: 华文中宋;
+    text-align: left;
+    width: 120px;
+    height: 30px;
+    border-bottom:1px #bac2c6 solid;
+}
+.article-number{
+    text-align: left;
+    border-bottom:1px #bac2c6 solid;
+}
+.article-cnNumber{
+    text-align: left;
+    border-bottom:1px #bac2c6 solid;
+}
+.article-enNumber{
+    text-align: left;
+    border-bottom:1px #bac2c6 solid;
+}
+.article-puncNumber{
+    text-align: left;
+    border-bottom:1px #bac2c6 solid;
+}
+.pageIndex{
+    margin-right: 70px;
+    text-align: right;
+}
+.page-button{
+    outline: 0;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    background-color: #f6fffa;
+    border:1px #bac2c6 solid;
+    padding: 0px;
+    color:#bac2c6 ;
+}
+#last-page,#next-page {
+    font-size: 1px;
+    font-family: "Agency FB";
+    color:#bac2c6 ;
+}
+
